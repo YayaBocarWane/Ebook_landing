@@ -586,7 +586,8 @@ input {
   font-family: "Unbounded", sans-serif;
 }
 
-button {
+
+.mbt{
   background-color: #f4a261;
   color: white;
   padding: 20px;
@@ -595,7 +596,7 @@ button {
   cursor: pointer;
   width: 70%; /* Bouton prend toute la largeur */
   font-size: 16px;
-  font-family: "Unbounded", sans-serif;
+   
 }
 
 button:hover {
