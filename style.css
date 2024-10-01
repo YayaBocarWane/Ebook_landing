@@ -1,0 +1,984 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+/* ................................creation de la navbar........................ */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(138, 64, 203, .4); 
+  width: 100%;
+  height: 7vh;
+  padding: 1rem;
+  position: fixed;
+  z-index: 10;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ebook h2 {
+  font-family: "Unbounded", sans-serif;
+  font-size: 28px;
+  color: #fff;
+}
+.lo-go img {
+  background-color: #e9c46a;
+  border: 1px solid #e9c46a;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 15px;
+}
+.nav-bar ul li {
+  list-style: none;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  color:#fff;
+}
+.btn button {
+  background: transparent;
+  padding: 0.7rem;
+  border-radius: 50px;
+  border-color: #f4a261;
+  color: #f4a261;
+  font-size: 14px;
+  font-family: "Unbounded", sans-serif;
+  text-align: center;
+}
+/* la partie image de fond */
+.hero-section{
+    width: 100%;
+    height: 120vh;
+    background: url(image/businessman-sitting-by-table-cafe.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+    bottom: -6rem;
+}
+.lettre{
+    position: relative;
+    right: -4rem;
+    top: -10rem;
+}
+.lettr{
+    position: relative;
+    top: 1rem;
+    gap: 20px;
+}
+.letrr b{
+    color: #E9C46A;
+    font-size: 20px;
+    font-family: "Unbounded", sans-serif;
+}
+.letrr h1{
+    color: #fff;
+    font-size: 42px;
+    font-family: "Unbounded", sans-serif;
+}
+.lettr button{
+    background-color: #f4a261;
+    padding: 0.7rem;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    border-color: transparent;
+    font-family: "Unbounded", sans-serif; 
+}
+.lettr b{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Unbounded", sans-serif;
+}
+.lettr b:hover {
+    color: #f4a261; /* Change la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+  }
+  .featured{
+    background-color: #f4a261;
+    width: 83.4%;
+    padding: 3.5rem;
+    
+  }
+  .blanc{
+    background-color: #fff;
+    width: 83.4%;
+    padding: 1.5rem;
+  }
+  /* .....................la partie tablette................. */
+  .section-padding{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  .img-fluid img{
+    max-width: 90%; /* Limite la largeur à 100% de son conteneur */
+    height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+  }
+  .book-info h6{
+    font-size: 20px;
+    color: #E9C46A;
+    font-family: "Unbounded", sans-serif;
+    padding: 5px;
+  }
+  .book-info h2{
+    font-size: 36px;
+    color: black;
+    font-family: "Unbounded", sans-serif;
+    padding: 5px;
+  }
+  .book-info p{
+    font-size: 16px;
+    color: #717275;
+    font-family: "Unbounded", sans-serif;
+    padding: 5px;
+  }
+  .book-info span{
+    color: #E76f51;
+  }
+
+
+  
+  /* ......................creation des avatar.......... */
+  .feat{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .avatar{
+    display:flex ;
+    align-items: center;
+  }
+  .fa img{
+    width: 33px;
+    height: 5vh;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  .rated{
+    display: flex;
+    gap: 10px;
+  }
+  .rated h2{
+    font-family: "Unbounded", sans-serif;
+  }
+  .rate{
+    display: flex;
+  }
+  .reviews{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .reviews b{
+    font-size: 16px;
+    font-family: "Unbounded", sans-serif;
+  }
+  .reviews p{
+    font-size: 14px;
+     font-family: "Unbounded", sans-serif;
+  }
+/* ............................la partie section .......... */
+.row{
+  text-align: center;
+}
+.row h6{
+     font-size: 20px;
+     font-family: "Unbounded", sans-serif;
+     color: #E9C46A;
+}
+.row h2{
+  font-size: 30px; ;
+  font-family: "Unbounded", sans-serif;
+  color: black;
+  padding: 12px;
+}
+/* .....................le scroller de navigation............ */
+.scroller{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+/* Styles pour le scroller */
+
+
+.side-nav {
+ border: 4px solid #E76f51;
+  padding: 5rem;
+  height: 55vh;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.side-nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 10px;
+  margin-bottom: -20px;  
+  font-family: "Unbounded", sans-serif;
+  border: 2px solid #f0f8ff;
+  /* margin: 10px; */
+  padding: 6px;
+  background-color: #f0f8ff; 
+  border-radius: 9%; 
+}
+
+
+.side-nav ul li a:hover {
+  color: #f4a261;
+  text-decoration: underline;
+  background-color: #E76f51;
+}
+
+/* Styles pour le contenu */
+.content {
+  margin-left: 100px; /* Pour éviter que le texte ne chevauche le scroller */
+  padding: 2rem;
+}
+#intro h1{
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  font-size: 22px;
+  padding: 10px;
+}
+#intro p{
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+}
+.blockquote{
+     padding: 70px;
+     margin-top: 25px;
+     background-color: #f0f8ff;
+     color: #212529;
+     font-size: 22px;
+     font-family: "Unbounded", sans-serif;
+}
+#intro b{
+     font-size: 18px;
+}
+#chapter1 h1{
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  font-size: 22px;
+  padding: 10px;
+}
+#chapter1 p{
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+}
+.chap-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.cha-image img{
+  max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+  border-radius: 20px;
+}
+ .cha-image .wa {
+  max-width: 65%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+}
+#chapter1 b{
+  font-size: 18px;
+}
+#chapter2 h1{
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  font-size: 22px;
+  padding: 10px;
+}
+#chapter2 span{
+  color: #E76f51;
+}
+#chapter2 p{
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+}
+.img-letre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.cha-im img{
+  max-width: 65%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+}
+.cha-let p{
+color: #717275;
+font-size: 16px;
+font-family: "Unbounded", sans-serif;
+}
+.cha-let strong{
+color: #717275;
+font-family: "Unbounded", sans-serif;
+}
+#chapter2 b{
+  font-size: 18px;
+}
+#chapter3 h1{
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  font-size: 22px;
+  padding: 10px;
+}
+#chapter3 p{
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+}
+#chapter3 img{
+  margin-top: 30px;
+  max-width: 65%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+}
+#chapter3 b{
+  font-size: 18px;
+}
+#chapter4 h1{
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  font-size: 22px;
+  padding: 10px;
+}
+#chapter4 p{
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+}
+.blockquote2{
+     padding: 70px;
+     margin-top: 25px;
+     background-color: #f0f8ff;
+     color: #212529;
+     font-size: 22px;
+     font-family: "Unbounded", sans-serif;
+}
+
+
+section {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* .........................................section author.............................. */
+.author{
+  background: url(image/circle-scatter-haikei222222222222222222222222222.png) no-repeat;
+ width: 100%;
+  height: 50vh;
+   background-size: cover;
+   background-position: center; 
+   position: relative;
+   left: -32rem;
+}
+.container-author{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.author-img{
+  position: relative;
+  right: -9rem;
+}
+.author-img img{
+  max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+  border: 9px solid #E9C46A;
+  border-radius: 50% ;
+}
+.author-bio{
+  position: relative;
+  right: -25rem;
+}
+.author-bio h6{
+  font-size: 20px;
+  font-family: "Unbounded", sans-serif;
+  color: #E9C46A;
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+
+}
+.author-bio h2{
+  font-size: 36px;
+  font-family: "Unbounded", sans-serif;
+  color: black;
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+}
+.author-bio p{
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+  color: #717275;
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+
+}
+/* ..................................la partie des notes ............................. */
+ section .testimonial-section {
+  flex-direction: row;
+  display:flex; /* Affichage en flex pour les témoignages */
+  justify-content: space-around; /* Espace égal entre les témoignages */
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap; /* Empêche le passage à la ligne */
+  position: relative;
+  gap: 10px;
+}
+
+.testimonial {
+  background-image: url('image/businessman-sitting-by-table-cafe.jpg'); /* Image de fond pour chaque carré */
+  background-size: cover; /* Couvre tout le carré */
+  background-position: center; /* Centre l'image */
+  width: 300px; /* Largeur du témoignage */
+  height: 300px; /* Hauteur du témoignage */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 10px; /* Espacement entre les témoignages */
+}
+.graah{
+  position: relative;
+  
+}
+
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-container {
+  background-color: #E76f51;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.username {
+  margin: 5px 0;
+  font-size: 1em;
+  color: white;
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+}
+
+.rating {
+  text-align: left; /* Alignement à gauche */
+  width: 100%;
+  display: flex; /* Flexbox pour aligner le nombre et les étoiles */
+  align-items: center; /* Aligne le nombre et les étoiles verticalement */
+}
+
+.rating  .rating-number  {
+  color: #fff;
+  font-family: "Unbounded", sans-serif;
+  font-size: 35px;
+  margin-right: 5px; /* Espacement entre le nombre et les étoiles */
+  font-size: 1em; /* Taille de police pour le nombre */
+}
+
+.rating span {
+  color: gold;
+  font-size: 1.9em;
+  font-family: "Unbounded", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+/* ..............foooter...... */
+.footer{
+  background-color: #f4a261;
+  width: 100%;
+  height: 130vh;
+}
+body {
+  background-color: white; /* Fond blanc pour toute la page */
+}
+
+.form-container {
+  background-color: #fff; /* Fond légèrement blanc pour le formulaire */
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 350px; /* Augmente la largeur du formulaire */
+  margin: 50px auto; /* Centrage du formulaire */
+  text-align: center;
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+}
+.form-container h2{
+  font-size: 36px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 70%; /* Prend toute la largeur du formulaire */
+  padding: 20px; /* Augmente l'espace à l'intérieur du champ */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 50px; /* Bord arrondi pour les champs de saisie */
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+}
+
+button {
+  background-color: #f4a261;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 50px; /* Bord arrondi pour le bouton */
+  cursor: pointer;
+  width: 70%; /* Bouton prend toute la largeur */
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+}
+
+button:hover {
+  background-color: #f4a261;
+}
+/* ..............contact-footerr....... */
+.footer-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -15rem;
+  flex-wrap: wrap;
+  text-align: center;
+  bottom: -9rem;
+}
+.mb h6{
+  font-family: "Unbounded", sans-serif;
+  font-size: 20px;
+  color: #E9C46A;
+}
+.mb-1{
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+.mb-2 p{
+  color: #fff;
+  font-size: 20px;
+  font-family: "Unbounded", sans-serif;
+}
+.mb-3{
+  color: #fff;
+  font-size: 20px;
+  font-family: "Unbounded", sans-serif;
+}
+.mb-4{
+  color:#E9C46A;
+  font-size: 20px;
+  font-family: "Unbounded", sans-serif;
+}
+.mb-5{
+  display: flex;
+}
+.mb-6 p{
+  color: #fff;
+}
+
+
+
+
+/*  ......................................la partie Responsive ................................................ */
+@media only screen and (max-width: 768px) {
+   /* ..............................la partie navbar........................ */
+   
+  .navbar {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    padding: 1rem;
+    position: fixed;
+    z-index: 10;
+    overflow-x: hidden;
+    
+  }
+  .nav-bar {
+    flex-direction: row;
+    position: relative;
+    top: -4rem;
+    right: -5rem;
+  }
+
+
+  .ebook h2 {
+    font-size: 24px;
+  }
+
+  .lo-go img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+
+  .nav-bar ul li a {
+    font-size: 16px;
+  }
+
+  .btn button {
+    font-size: 12px;
+    padding: 0.5rem;
+  }
+  /* .........................la premiere partie section................ */
+  .hero-section{
+    width: 100;
+    height: 120vh;
+    /* background-attachment: fixed; */
+    /* background: url(image/businessman-sitting-by-table-cafe.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    */
+}
+  .container{
+    flex-direction: column;
+    align-items: center;
+}
+.lettre{
+    position: relative;
+    right: -0.4rem;
+    top:10rem;
+}
+.letrr b{
+    color: #E9C46A;
+    font-size: 28px;
+    font-family: "Unbounded", sans-serif;
+}
+.letrr h1{
+    color: #fff;
+    font-size: 40px;
+    font-family: "Unbounded", sans-serif;
+}
+.image{
+    position: relative;
+    bottom: -4rem;
+}
+.image img{
+    width: 530px;
+}
+.featured{
+    background-color: #f4a261;
+    width: 75%;
+    padding: 3.5rem;
+  }
+  .container{
+    text-align:center;
+    position: relative;
+    top: -5rem;
+  }
+  .lettr button{
+    background-color: #f4a261;
+    padding: 1.5rem;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 19px;
+    border-color: transparent;
+    font-family: "Unbounded", sans-serif; 
+}
+.lettr b{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Unbounded", sans-serif;
+}
+.feat{
+    flex-direction: column;
+    align-items: flex-start;
+   
+  }
+  .featured{
+    margin-bottom: -2.5rem;
+  }
+  .rated{
+    flex-direction: row;
+    display: flex;
+  }
+  .reviews{
+    display: flex;
+  }
+  .fa img{
+    width: 70px;
+    height: 10vh;
+    border: 10px solid #fff;
+    border-radius: 50%;
+  }
+  .blanc{
+    background-color: #fff;
+    width: 89%;
+    padding: 1.5rem;
+  }
+  /* la partie tablete  */
+  .section-padding{
+   display: block;
+   justify-content: center;
+   align-items:center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .img-fluid img{
+   max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+    height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+  }
+  /* ............................la partie section .......... */
+  /* .....................le scroller de navigation............ */
+  .scroller{
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .side-nav {
+    border: 4px solid #E76f51;
+     padding: 1rem;
+     height: 45vh;
+     margin: 15px;
+     border-radius: 20px;
+   }
+  #intro b{
+    display: none;
+}
+#chapter1 b{
+  display: none;
+}
+#chapter2 b{
+  display: none;
+}
+#chapter3 b{
+  display: none;
+}
+#chapter4 b{
+  display: none;
+}
+.content {
+ display: block;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ left: -3.5rem;
+}
+#intro h1{
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  font-size: 25px;
+  padding: 10px;
+}
+#intro p{
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 20px;
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+}
+#intro{
+  margin: 0;
+}
+#chapter1 p{
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 20px;
+}
+#chapter2 p{
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 20px;
+}
+#chapter3 p{
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 20px;
+}
+#chapter4 p{
+  width: 100%; /* Le paragraphe occupe toute la largeur disponible */
+  text-align: left; /* Le texte sera aligné à gauche */
+  color: #717275;
+  font-family: "Unbounded", sans-serif;
+  font-size: 20px;
+}
+.chap-img{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+.cha-image img{
+  max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+  border-radius: 20px;
+}
+ .cha-image .wa {
+  max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+}
+.img-letre{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.cha-im img{
+  max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+}
+#chapter3 img{
+  margin-top: 30px;
+  max-width: 100%; /* Limite la largeur à 100% de son conteneur */
+  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+  border-radius: 20px;
+}
+/* ...............section author........... */
+.author{
+  width: 100%;
+}
+.container-author{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -25rem;
+}
+.author-img{
+  position: relative;
+  right: -6.5rem;
+}
+.author-bio{
+  position: relative;
+  right: -7rem;
+  margin-top: 15px;
+  
+}
+.author-bio h6{
+  text-align: center;
+}
+.author-bio h2{
+  text-align: center;
+}
+.author-bio p{
+  text-align: center;
+}
+/* ................parie note ........ */
+section .testimonial-section {
+  flex-direction: row;
+  display:flex; /* Affichage en flex pour les témoignages */
+  justify-content: space-around; /* Espace égal entre les témoignages */
+  align-items: center;
+  padding: 50px;
+  margin-top: 3rem;
+  flex-wrap: wrap; /* Empêche le passage à la ligne */
+  gap: 10px;
+}
+/* ..................footer........ */
+.footer{
+  background-color: #f4a261;
+  width: 100%;
+  height: 120vh;
+}
+.footer-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -0.5rem;
+}
+.form-container{
+  position: relative;
+  right: -15rem;
+}
+.mb{
+  position: relative;
+  right: -15rem;
+}
+.mb-1 p{
+  position: relative;
+  right: -3rem;
+}
+.mb-1 img {
+  position: relative;
+  right: -3rem;
+}
+
+}
+
+
