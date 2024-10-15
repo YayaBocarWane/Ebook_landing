@@ -227,8 +227,12 @@
 
 .side-nav {
  border: 4px solid #E76f51;
-  padding: 5rem;
+  padding: 3rem;
   height: 55vh;
+  border-radius: 20px;
+  position: sticky;
+  top: 0;
+  
 }
 
 .side-nav ul {
@@ -244,14 +248,14 @@
 .side-nav ul li a {
   color: black;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 16px;
   margin-bottom: -20px;  
   font-family: "Unbounded", sans-serif;
   border: 2px solid #f0f8ff;
   /* margin: 10px; */
-  padding: 6px;
+  padding: 16px;
   background-color: #f0f8ff; 
-  border-radius: 9%; 
+  border-radius: 30px; 
 }
 
 
@@ -263,8 +267,11 @@
 
 /* Styles pour le contenu */
 .content {
-  margin-left: 100px; /* Pour éviter que le texte ne chevauche le scroller */
-  padding: 2rem;
+  max-width: 50%;  /* Largeur maximale */
+  max-height: auto; /* Hauteur maximale */
+  overflow: auto;    /* Ajoute des barres de défilement si nécessaire */
+  /* border: 1px solid black; */
+  
 }
 #intro h1{
   color: black;
@@ -407,32 +414,38 @@ p {
 }
 /* .........................................section author.............................. */
 .author{
-  background: url(image/circle-scatter-haikei222222222222222222222222222.png) no-repeat;
+  background: url(image/circle-scatter-haikei.png) no-repeat;
  width: 100%;
-  height: 50vh;
-   background-size: cover;
-   background-position: center; 
-   position: relative;
-   left: -32rem;
+  height: 100vh;
+  background-size: 23%;
+   /* background-size: cover; */
+   /* background-position: center;  */
+   /* position: relative;
+   left: -32rem; */
 }
 .container-author{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 7rem;
 }
 .author-img{
-  position: relative;
-  right: -9rem;
+   position: relative;
+  right: -9rem; 
+  bottom: -5rem;
 }
 .author-img img{
-  max-width: 100%; /* Limite la largeur à 100% de son conteneur */
-  height: auto;    /* La hauteur s'ajuste automatiquement en fonction de la largeur */
+  
   border: 9px solid #E9C46A;
   border-radius: 50% ;
+  width: 350px; /* Ajuste la largeur pour que l'image soit carrée */
+  height: 350px; /* Ajuste la hauteur pour que l'image soit carrée */
+  border-radius: 50%; /* Rend l'image circulaire */
 }
 .author-bio{
+  max-width: 45%;
   position: relative;
-  right: -25rem;
+  bottom: -5rem;
 }
 .author-bio h6{
   font-size: 20px;
@@ -474,9 +487,9 @@ p {
   background-size: cover; /* Couvre tout le carré */
   background-position: center; /* Centre l'image */
   width: 300px; /* Largeur du témoignage */
-  height: 300px; /* Hauteur du témoignage */
+  height: 350px; /* Hauteur du témoignage */
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -538,6 +551,8 @@ p {
   color: gold;
   font-size: 1.9em;
   font-family: "Unbounded", sans-serif;
+  position: relative;
+  bottom: -3rem;
 }
 
 p {
@@ -561,11 +576,13 @@ body {
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 350px; /* Augmente la largeur du formulaire */
+  width: 400px; /* Augmente la largeur du formulaire */
   margin: 50px auto; /* Centrage du formulaire */
   text-align: center;
   font-size: 16px;
   font-family: "Unbounded", sans-serif;
+  position: relative;
+  right: -6rem;
 }
 .form-container h2{
   font-size: 36px;
@@ -612,6 +629,11 @@ button:hover {
   flex-wrap: wrap;
   text-align: center;
   bottom: -9rem;
+  margin: 0;
+}
+.mb{
+  position: relative;
+  left: -6rem;
 }
 .mb h6{
   font-family: "Unbounded", sans-serif;
